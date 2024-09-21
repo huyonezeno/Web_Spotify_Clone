@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    
+}
+.link{
+    color:blue;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2, p, a, ul, ol, li {
+    font-family: 'Montserrat', sans-serif;
+}

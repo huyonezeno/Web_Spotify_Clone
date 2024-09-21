@@ -1,0 +1,36 @@
+    * {
+        display:flexbox;
+        margin: 0;
+        padding: 0;
+        font-family: arial, sans-serif;
+        background-color:black;
+    }
+    .top-bar{
+        display:flex;
+        background-color: #000000;
+        color: white;
+        height: 60px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        display:flex;
+        margin: 23px 0px 0px 28px;
+    }
+    .circle-home-button{
+        display: flex; 
+        margin: 23px 0px 0px 400px;
+        background-color: #979797;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        align-items: center;
+        justify-items: center;
+        color:white;
+    }
+    navigation{
+        display:flexbox;
+        color:black;
+    }
+    
+ 
