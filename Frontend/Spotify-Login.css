@@ -1,0 +1,290 @@
+@font-face { /* font for all pages */
+    font-family: "CircularSpotifyText";
+    src: url('fonts\CircularSpotifyText-Bold.otf') format('opentype');
+    font-weight: 500;
+}
+
+body { /* body of the login page */
+    background: linear-gradient(180deg, #232222, #121111, #000000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'CircularSpotifyText', sans-serif;
+    /* height:100vh; */
+    flex-direction: column;
+    /* Ensure content stacks vertically */
+    justify-content: space-between;
+    /* Space between content and footer */
+    margin: 0;
+    /* Remove default margins */
+    padding: 0;
+    /* min-height:100vh; */
+}
+
+.login-container { /* container for the login page */
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    color: rgb(255, 255, 255);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    row-gap: normal;
+    unicode-bidi: isolate;
+    width: 734px;
+    height: 852.41px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-bottom: 0px;
+    padding: 0px;
+    flex-wrap: wrap;
+}
+
+.login-container h2 { /* title for the login page */
+    width: 734px;
+    height: 37px;
+    font-size: 1.9rem;
+    text-align: center;
+    padding-top: 1px;
+    word-spacing: -3px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    font-size: 32px;
+
+}
+
+.logo { /* container for the Spotify logo */
+    max-width: 734px;
+    height: 76px;
+    width: 100%;
+    padding: 32px 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-bottom: none;
+    box-sizing: border-box;
+}
+
+.account-connect { /* container for the login with Spotify button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 28px;
+    gap: 3px;
+    /* This sets a uniform gap between all buttons */
+}
+
+.account-connect button { /* button for the login with Spotify */
+    max-width: 324px;
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 500px;
+    color: white;
+    background: transparent;
+    border: 1px solid #878787;
+    font-size: 1rem;
+    font-weight: bold;
+    justify-content: space-between;
+    text-transform: none;
+    letter-spacing: normal;
+    margin: 0px 0px 8px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.account-connect button:hover { /* hover effect for the login with Spotify button */
+    box-shadow: inset 0 0 0 1px white;
+    /* Bright white border on hover */
+}
+
+.account-connect button img { /* img for the icon of every method of sign in */
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin: 0 10px;
+}
+
+.account-connect button span { /* span for the text in the button */
+    position: relative;
+    top: 3px;
+}
+
+.login-container hr { /* horizontal line for "Log in to Spotify" */
+    margin: 32px 100px;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    border-image: initial;
+    border-top: 1px solid rgb(41, 41, 41);
+}
+
+.login { /* login form container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login form label { /* label for username and password */
+    color: white;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.login form input { /* input field for username and password*/
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    background: rgb(18, 18, 18);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 1px #878787;
+    color: white;
+    -webkit-tap-highlight-color: transparent;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.username {
+    width: 300px;
+    height: 48px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.password {
+    width: 300px;
+    height: 48px;
+    padding-left: 10px;
+    padding-right: 40px; /* Make room for the icon */
+    box-sizing: border-box;
+}
+
+.username:hover,
+.password:hover {
+    box-shadow: inset 0 0 0 1px white;
+    /* Bright white border on hover */
+}
+
+.username:focus,
+.password:focus {
+    box-shadow: inset 0 0 0 1px white;
+    /* Keep the bright border when focused */
+    outline: none;
+}
+
+.password-toggle:hover {
+    color: white; /* Highlight the icon on hover */
+}
+
+.password-toggle {  /* set up for the eye icon */
+    display: inline-flex;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #656565;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.password-container {   /* container for the password */
+    position: relative;
+    width: 300px;
+    /* Ensures input field and icon are aligned */
+}
+
+
+.login button {  /* login button */
+    background-color: #1ed760;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 8px 32px;
+    height: 48px;
+    letter-spacing: 0.4px;
+    font-size: 15px;
+    align-items: center;
+    margin: 20px 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    width: 310px;
+}
+
+.login button:hover {  /* hover effect for the login button */
+    background-color: #3be477;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.password-recovery a {   /* container for the link */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.password-recovery a:hover {  /* hover effect for the link */
+    color: #1ed760;
+}
+
+.sign-up-new-account {  /* container for the last link */
+    margin-top: 30px;
+    margin-left: 18px;
+}
+
+.sign-up-new-account a {  /* link for the last link */
+    color: white;
+    text-decoration: underline;
+}
+
+.sign-up-new-account a:hover { /* hover effect for the last link */
+    color: #1ed760;
+}
+
+.sign-up-new-account span { /* text for the last link */
+    color: #B3B3B3;
+    font-weight: 400;
+}
+
+
+footer { /* footer for the login page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 24px;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    background-color: #121212;
+    /* Optional, adjust if you want a background */
+    position: relative;
+    /* Ensure footer stays within normal flow */
+}
+
+.footer p { /* text for the footer */
+    color: #B3B3B3;
+}
+
+.footer a { /* link for the footer */
+    color: white;
+    text-decoration: underline;
+}
